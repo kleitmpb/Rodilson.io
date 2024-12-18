@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 4%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.navbar a {
+    display: inline-block;
+    font-size: 19px;
+    color: #a6a6a67e;
+    text-decoration: none;
+    font-weight: 400;
+    margin-right: 70px;
+    transition: .3s;
+
+}
+
+
+.navbar a:hover {
+    color: #00FF08;
+    transform: scale(1.05);
+}
+
+header .btn-contacto button {
+    padding: 10px 50px;
+    font-size: 18px;
+    font-size: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header .btn-contacto button:hover {
+    transform: scale(1.05);
+}
+
+header .btn-contacto button:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+}
+
+.Inicio {
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 120vh;
+    background: url(Green\ ilustrated\ Mountain\ Desktop\ frd.jpg)no-repeat;
+    background: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 7% 0;
+
+}
+
+.Inicio-content {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.Inicio-content h1 {
+    font-size: 40px;
+    color: #ededed;
+}
+
+.Inicio-content h2 {
+    font-size: 27px;
+    color: #ffffff;
+}
+
+.Inicio-content h2 span {
+    color: #00FF08;
+}
+
+.Inicio-content p {
+    font-size: 17px;
+    color: #ededed;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 5px 0;
+}
+
+.Inicio-sci a {
+    display: inline flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border-radius: 50%;
+    border: 2px solid #00FF08;
+    font-size: 24px;
+    color: #00FF08;
+    text-decoration: none;
+    margin: 10px 15px 30px 0;
+    transition: 0.5s;
+}
+
+.Inicio-sci a:hover {
+    background: #00FF08;
+    color: black;
+    box-shadow: 0 0 20px #00FF08;
+    transform: scale(1.3);
+}
+
+.dnl {
+    padding: 10px 50px;
+    font-size: 18px;
+    font-size: 600;
+    background-color: #00FF08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.dnl:hover {
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+#img {
+    margin-right: 70px;
+    width: 400px;
+    height: 400px;
+    border: 3px solid #00ff08;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#span {
+    color: #00FF08;
+}
+
+.Sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+    color: #ededed;
+    gap: 2rem;
+    padding-bottom: 6rem;
+}
+
+.Sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.Sobre-img img {
+    margin-left: 230px;
+    width: 300px;
+    height: 300px;
+    border: 2.5px solid #00ff08;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Sobre-text h1 {
+    margin-top: 100px;
+    font-size: 45px;
+    line-height: 80px;
+}
+
+.Sobre-text h1 span {
+    color: #00FF08;
+}
+
+.Sobre-text p {
+    line-height: 1.5;
+    font-size: 17px;
+    margin-bottom: 4ren;
+    margin-right: 150px;
+}
+
+.btn-box {
+    padding: 10px 60px;
+    display: inline-flex;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 20px;
+    cursor: pointer;
+    border: 2px solid #00FF08;
+    transition: 0.5s;
+}
+
+.btn-box:hover {
+    transform: scale(1.06);
+    box-shadow: 0px 0px 45px #00ff08;
+
+}
+
+.Serviços {
+    color: #ededed;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 4ren;
+}
+
+.sub-title {
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 1px;
+    line-height: 40px;
+}
+
+.sub-title span {
+    color: #00FF08;
+}
+
+.Serviços-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(259px, 1fr));
+    grid-gap: 40px;
+    line-height: 1.4;
+    margin-top: 50px;
+}
+
+.Serviços-list div {
+    background-color: transparent;
+    padding: 40px;
+    font-size: 17px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 30px;
+    border: 2.5px solid #646a64;
+    transition: background 0.5s, transform 0.5s;
+    cursor: pointer;
+
+}
+
+.Serviços-list div:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: 1px 1px 35px #00FF08,
+        1px 1px 20px #00FF08
+}
+
+.Serviços-list div i {
+    font-size: 55px;
+    color: #00FF08;
+}
+
+.Serviços-list div h3 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.Serviços-list div a {
+    text-decoration: none;
+    color: #00FF08;
+    font-size: 17px;
+    display: inline-block;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 90px;
+}
+
+.sub-title {
+    color: #ffffff;
+}
+
+.sub-title span {
+    color: #00FF08;
+}
+
+.container1 {
+    color: #ffffff;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+
+.heading1 {
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+}
+
+.skill {
+    margin-bottom: 15px;
+    width: 100%;
+    margin-left: 500px;
+}
+
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+
+.barras{
+    margin-top: 20px;
+}
+  .bar {
+    background-color: #e0e0e0;
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+  .fill {
+    height: 100%;
+    background-color: #00FF08;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+.fill span{
+    text-align: right;
+    padding-top: 1px;
+    font-size: 15px;
+    color: #000000;
+}
+
+  .html .fill { width: 70%; }
+  .css .fill { width: 85%; }
+  .js .fill { width: 60%; }
+  .react .fill { width: 50%; }
+
+  
+.skill {
+    margin-bottom: 15px;
+    width: 500px;
+}
+
+  .skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+  .bar {
+    background-color: #e0e0e0;
+    height: 25px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+  .fill {
+    height: 100%;
+    background-color: #00FF08;
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+.fill span{
+    text-align: right;
+    padding-top: 1px;
+    font-size: 15px;
+    color: #000000;
+}
+
+  .Portugues .fill { width: 90%; }
+  .Ingles .fill { width: 75%; }
+  .Changana .fill { width: 65%; }
+  
+  .main-text{
+    padding-top: 130px;
+    margin-top: 30px;
+    color: #ffffff;
+  }
+  .main-text h2{
+    font-size: 45px;
+    line-height: 1;
+    text-align: center;
+  }
+  .main-text h2 span {
+    color: #00ff08;
+  }
+  .Projecto-content{
+    display: flex;
+  }
+  .row{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .row img{
+    width: 80%;
+    height: 90%;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 35px;
+    transition: transform 0.5s;
+  }
+  .layer{
+    width: 100%;
+    margin-left: 20px;
+    height: 0;
+    background: linear-gradient(#000000(0,0,0,0,1),#00FF08);
+    position: absolute;
+    border-radius: 8px;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+    transition: height 0.5s;
+  }
+ 
+  section.formulario{
+    padding: 80px 4%;
+    display: flex;
+    justify-content: center;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #303030f8;
+    border: 0;
+    outline: o;
+    padding: 10px 60px;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+}
+
+form .btn-enviar{
+    margin-top: 15px;
+    text-align: center;
+
+}
+
+form .btn-enviar input{
+    width: 200px;
+    background-color: #00FF08;
+    color: #030101;
+    font-weight: 700;
+    cursor: pointer;
+}
+.send {
+    color: #ffffff;
+    font-size: 45px;
+}
+.send  span {
+    color: #00FF08;
+}
